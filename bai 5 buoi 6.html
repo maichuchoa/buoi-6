@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 1fr 2fr; 
+            grid-template-rows: auto;
+            row-gap: 5px; 
+            width: 80%;
+            margin: auto;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: rgb(164, 164, 98);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: saddlebrown;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: rgb(235, 139, 139);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(141, 45, 45);
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="bai 6 buoi 6.html">bài 7</a>
+    <a href="bai 7 buoi 6.html">bài 8</a>
+    <a href="bai 8 buoi 6.html">bài 9</a>
+
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

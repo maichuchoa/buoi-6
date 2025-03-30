@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar content aside"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr; 
+            grid-template-rows: auto;
+            row-gap: 4px;
+            width: 80%;
+            margin: auto;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: rgb(91, 88, 88);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: rgb(110, 52, 10);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: rgb(194, 105, 105);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: rgb(191, 129, 53);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: gray;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="bai 7 buoi 6.html">bài 8</a>
+    <a href="bai 8 buoi 6.html">bài 9</a>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="aside">Aside</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
